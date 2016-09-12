@@ -9,6 +9,7 @@ package proyectoprogramacion1;
  *
  * @author Arles Cerrato
  */
+import javax.swing.*;
 public class ProyectoProgramacion1 {
 
     /**
@@ -17,8 +18,10 @@ public class ProyectoProgramacion1 {
     public static void main(String[] args) {
         // TODO code application logic here
         PrimerParcial metodo1 = new PrimerParcial();
-        System.out.println("HOLA MUNDO");
-        metodo1.prueba();
+        String respuesta = "Si";
+        while (respuesta.equalsIgnoreCase("Si")){//ciclo de respuesta de usuario
+            
+        }
     }
     
 }
