@@ -16,7 +16,9 @@ public class ProyectoProgramacion1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        PrimerParcial metodo1 = new PrimerParcial();
         System.out.println("HOLA MUNDO");
+        metodo1.prueba();
     }
     
 }
