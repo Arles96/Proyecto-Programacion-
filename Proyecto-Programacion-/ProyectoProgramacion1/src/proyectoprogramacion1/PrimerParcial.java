@@ -12,7 +12,6 @@ package proyectoprogramacion1;
 public class PrimerParcial {
     
     public void prueba(){
-        System.out.println("HOLA MUNDO OTRA VEZ");
-        System.out.println(" ");
+        
     }
 }
