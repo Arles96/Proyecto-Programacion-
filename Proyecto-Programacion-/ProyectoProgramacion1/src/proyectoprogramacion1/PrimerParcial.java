@@ -9,9 +9,7 @@ package proyectoprogramacion1;
  *
  * @author Arles Cerrato
  */
-public class PrimerParcial {
+public class PrimerParcial {    
     
-    public void prueba(){
-        
-    }
+    
 }

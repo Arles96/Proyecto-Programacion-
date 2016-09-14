@@ -20,6 +20,7 @@ public class ProyectoProgramacion1 {
         // Empiezo del los Cambios de Arles Cerrato
         PrimerParcial metodo1 = new PrimerParcial();// Metodo para las preguntas del primer parcial
         String respuesta = "Si";// variable para la respuesta del usuario
+        int contador=0;// contador para saber cuantas respuesta estan buenas
         while (respuesta.equalsIgnoreCase("Si")) {//ciclo de respuesta de usuario
             String nombre = JOptionPane.showInputDialog("Ingrese su nombre por favor");// variable donde el usuario introducira su nombre en el juego
             JOptionPane.showMessageDialog(null, "Empezaremos con el juego de preguntas");// Mensaje para el usuario para empezar el juego de preguntas
@@ -37,6 +38,63 @@ public class ProyectoProgramacion1 {
             PreguntasPrimerParcial[8] = "Metodo para comparar si el contenido de dos String es exactamente iguales";
             PreguntasPrimerParcial[9] = "Metodos que nos permite cambiar un caracter por otro dentro de una cadena";
             //fin de la asiganacion de las preguntas del primer parcial
+            String [] RespuestaPrimerParcial = new String [15];//arreglo para las respuesta del primer parcial            
+            int respuestapregunta;// en esta variable iran las respuesta de los botones
+            respuestapregunta = JOptionPane.showOptionDialog( null,PreguntasPrimerParcial[0],
+                "Selector de opciones",JOptionPane.YES_NO_CANCEL_OPTION,
+                 JOptionPane.QUESTION_MESSAGE,null,// null para icono por defecto.
+                new Object[] { "Algoritmo", "NOLAE", "Codigo", "Java"},"Algoritmo");
+            switch (respuestapregunta){// este switch sirve para almacenar la respuesta del usuario
+                case 0:
+                    RespuestaPrimerParcial[0]="Algoritmo";
+                    contador++;
+                    break;
+                case 1:
+                    RespuestaPrimerParcial[0]="NOLAE";
+                    break;
+                case 2:
+                    RespuestaPrimerParcial[0]="Codigo";
+                    break;
+                case 3:
+                    RespuestaPrimerParcial[0]="Java";
+                    break;
+            }// fin de switch
+            respuestapregunta = JOptionPane.showOptionDialog( null,PreguntasPrimerParcial[1],
+                "Selector de opciones",JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE,null,// null para icono por defecto.
+                new Object[] { "Python", "Java", "C", "JavaScript"},"Python");
+            switch (respuestapregunta){// este switch sirve para almacenar la respuesta del usuario
+                case 0:
+                    RespuestaPrimerParcial[1]="Python";
+                    break;
+                case 1:
+                    RespuestaPrimerParcial[1]="Java";
+                    contador++;
+                    break;
+                case 2:
+                    RespuestaPrimerParcial[1]="C";
+                    break;
+                case 3:
+                    RespuestaPrimerParcial[1]="JavaScript";
+                    break;
+            }// fin de switch
+            respuestapregunta = JOptionPane.showOptionDialog( null,PreguntasPrimerParcial[2],
+                "Selector de opciones",JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE,null,// null para icono por defecto.
+                new Object[] { "James Gosling", "Bjarne Stroustrup", "Tim Berners-Lee", "Guido Van Rossum"},"Tim Berners-Lee");
+            switch (respuestapregunta){// este switch sirve para almacenar la respuesta del usuario
+                case 0:
+                    RespuestaPrimerParcial[2]="James Gosling";
+                    contador++;
+                    break;
+                case 1:
+                    RespuestaPrimerParcial[2]="Bjarne Stroustrup";
+                    break;
+                case 2:
+                    RespuestaPrimerParcial[2]="Tim Beeners-Lee";
+                    break;
+                case 3:
+                    RespuestaPrimerParcial[2]="Guido Van Rossum";
+                    break;
+            }// fin de switch
             //Fin de mis cambios Arles Cerrato
             String[] PreguntasSegundoParcial = new String[10];// Arreglo donde iran las preguntas del Segundo Parcial
             //Asignacion de preguntas del segundo parcial en el arreglo
@@ -53,6 +111,6 @@ public class ProyectoProgramacion1 {
             PreguntasSegundoParcial[9] = "Es el metodo que nos devuelve la posicion de un ArraysList:";
             //fin de la asiganacion de las preguntas del segundo parcial
             //Fin de mis cambios F.G.
-        }
-    }
-}
+        }// Fin de la respuesta de usuario        
+    }// fin del metodo main
+}// fin de la clase
